@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Post from './posts/post';
@@ -16,6 +17,9 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <div>
+      <Head>
+        <title>Next js App</title>
+      </Head>
       <h1 className="text-xl font-bold underline">Hello world</h1>
       <h1>Hello world</h1>
       <h1>Hello world</h1>
