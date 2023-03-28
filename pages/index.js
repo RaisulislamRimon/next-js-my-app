@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Post from './posts/posts';
 
 export async function getStaticProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -24,6 +25,9 @@ export default function Home({ posts }) {
       <Image src="/flowers.jpg" width={120} height={120}></Image>
       <button className="btn btn-warning">Warning</button>
       {posts.length}
+      {posts.map((post) => (
+        <Post post={post} key={post.id} />
+      ))}
     </div>
   );
 }
