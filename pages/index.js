@@ -8,7 +8,6 @@ export default function Home() {
       <h1>Hello world</h1>
       <h1>Hello world</h1>
 
-
       <Link href="/blogs/100">/blogs/100</Link>
     </div>
   );
