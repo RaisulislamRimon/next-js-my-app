@@ -26,7 +26,12 @@ export default function Home({ posts }) {
       <h1>Hello world</h1>
       <Link href="/blogs">/blogs</Link> <br /> <br />
       <Link href="/blogs/100">/blogs/100</Link> <br /> <br />
-      <Image src="/flowers.jpg" width={120} height={120}></Image>
+      <Image
+        src="https://cdn.jsdelivr.net/gh/RaisulislamRimon/next-js-my-app@main/public/flowers-g856d85c25_1920.jpg"
+        width={120}
+        height={120}
+      ></Image>
+      {/* <Image src="/flowers.jpg" width={120} height={120}></Image> */}
       <button className="btn btn-warning">Warning</button>
       {posts.length}
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
