@@ -30,7 +30,7 @@ export async function getStaticProps() {
   );
   const posts = await res.json();
 
-  console.log(posts.length);
+  // console.log(posts.length);
 
   return {
     props: {
