@@ -1,19 +1,29 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function PostDetails({ post }) {
+  const router = useRouter();
+  const handleBack = () => {
+    router.push('/posts');
+  };
   return (
     <div>
       <Head>
         <title>{post.title}</title>
       </Head>
 
-      <Link href="/posts">Back to posts</Link>
+      <Link href="/posts" className="btn btn-accent">
+        Back to posts
+      </Link>
       <br />
       <br />
       <h1>Post No: {post.id}</h1>
       <h2 className="text-white">{post.title}</h2>
       <p className="text-orange-400">{post.body}</p>
+      <button onClick={handleBack} className="btn btn-warning">
+        Back to posts
+      </button>
     </div>
   );
 }
