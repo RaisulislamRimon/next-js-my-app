@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Link from 'next/link';
 
 export default function PostDetails({ post }) {
   return (
     <div>
-      <Link href="/posts">Back to posts:</Link>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
+
+      <Link href="/posts">Back to posts</Link>
       <br />
       <br />
       <h1>Post No: {post.id}</h1>
