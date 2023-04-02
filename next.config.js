@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['cdn.jsdelivr.net'],
+    domains: ['i.ibb.co'],
   },
 };

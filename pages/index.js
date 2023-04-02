@@ -27,7 +27,7 @@ export default function Home({ posts }) {
       <Link href="/blogs">/blogs</Link> <br /> <br />
       <Link href="/blogs/100">/blogs/100</Link> <br /> <br />
       <Image
-        src="https://cdn.jsdelivr.net/gh/RaisulislamRimon/next-js-my-app@main/public/flowers-g856d85c25_1920.jpg"
+        src="https://i.ibb.co/42gC30B/flowers.webp"
         width={120}
         height={120}
       ></Image>
