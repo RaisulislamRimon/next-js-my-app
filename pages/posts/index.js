@@ -12,9 +12,9 @@ export default function Posts({ posts }) {
         The number of posts:
         {posts.length}
       </p>
-
+      <h2>Post component</h2>
+      <h1 className="text-xl underline text-gray">Post</h1>
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <h2>Post component</h2>
         {posts.map((post) => (
           <Post post={post} key={post.id} />
         ))}
