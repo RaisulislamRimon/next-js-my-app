@@ -4,7 +4,10 @@ import Image from 'next/image';
 import Post from './posts/post';
 
 export async function getStaticProps() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  // const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const res = await fetch(
+    'https://jsonplaceholder.typicode.com/posts?_limit=40'
+  );
   const posts = await res.json();
 
   return {
