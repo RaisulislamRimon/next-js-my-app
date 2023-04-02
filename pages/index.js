@@ -33,7 +33,10 @@ export default function Home({ posts }) {
       ></Image>
       {/* <Image src="/flowers.jpg" width={120} height={120}></Image> */}
       <button className="btn btn-warning">Warning</button>
-      {posts.length}
+      <p>
+        The number of posts:
+        {posts.length}
+      </p>
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <Post post={post} key={post.id} />
