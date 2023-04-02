@@ -1,23 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import Post from './posts/post';
 
-export async function getStaticProps() {
-  // const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const res = await fetch(
-    'https://jsonplaceholder.typicode.com/posts?_limit=40'
-  );
-  const posts = await res.json();
-
-  return {
-    props: {
-      posts,
-    },
-  };
-}
-
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -36,15 +21,6 @@ export default function Home({ posts }) {
       ></Image>
       {/* <Image src="/flowers.jpg" width={120} height={120}></Image> */}
       <button className="btn btn-warning">Warning</button>
-      <p>
-        The number of posts:
-        {posts.length}
-      </p>
-      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
-          <Post post={post} key={post.id} />
-        ))}
-      </div>
     </div>
   );
 }
