@@ -20,7 +20,9 @@ export default function Home() {
         height={120}
       ></Image>
       {/* <Image src="/flowers.jpg" width={120} height={120}></Image> */}
-      <button className="btn btn-warning">Warning</button>
+      <Link href="/posts">
+        <button className="btn btn-warning">All Posts</button>
+      </Link>
     </div>
   );
 }

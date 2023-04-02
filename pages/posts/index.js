@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Post from '../../components/Post/Post';
 
 export default function Posts({ posts }) {
@@ -7,6 +8,10 @@ export default function Posts({ posts }) {
       <Head>
         <title>Post</title>
       </Head>
+
+      <Link href="/">
+        <button className="btn btn-warning">Back to Home</button>
+      </Link>
 
       <p>
         The number of posts:
