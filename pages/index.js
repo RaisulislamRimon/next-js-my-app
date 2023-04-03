@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,7 +11,10 @@ export default function Home() {
       <h1 className="text-xl font-bold underline">Hello world</h1>
       <h1>Hello world</h1>
       <h1>Hello world</h1>
-      <h1>Hello world</h1>
+      <Link href="/news">
+        <button className="btn btn-primary">News</button>
+      </Link>
+      <br />
       <Link href="/blogs">/blogs</Link> <br /> <br />
       <Link href="/blogs/100">/blogs/100</Link> <br /> <br />
       <Image

@@ -1,7 +1,18 @@
+import Head from "next/head";
+import Link from "next/link";
+
 export default function comments({ data }) {
   // console.log(data);
   return (
     <div>
+      <Head>
+        <title>Comments</title>
+      </Head>
+
+      <Link href="/">
+        <button className="btn btn-warning">Back to Home</button>
+      </Link>
+
       <h1 className="text-3xl underline text-center">Comments</h1>
       <div>
         {data.map((comment) => (
