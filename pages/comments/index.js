@@ -1,14 +1,16 @@
 export default function comments({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <div>
-      <h1>Comments</h1>
-      {data.map((comment) => (
-        <div key={comment.id}>
-          <p>{comment.id}</p>
-          <h1>{comment.body}</h1>
-        </div>
-      ))}
+      <h1 className="text-3xl underline text-center">Comments</h1>
+      <div>
+        {data.map((comment) => (
+          <div key={comment.id} className="border my-10 mx-10 rounded p-5">
+            <p>{comment.id}</p>
+            <h1>{comment.body}</h1>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
