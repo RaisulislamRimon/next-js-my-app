@@ -23,6 +23,10 @@ export default function Home() {
       <Link href="/posts">
         <button className="btn btn-warning">All Posts</button>
       </Link>
+      <br />
+      <Link href="/comments">
+        <button className="btn btn-secondary">All Comments</button>
+      </Link>
     </div>
   );
 }
